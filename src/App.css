@@ -1,0 +1,17 @@
+/*
+ * App.css - Global app-level styles
+ * 
+ * NOTE: Most styles are now co-located with their components as CSS modules.
+ * Add only truly global, app-level overrides here.
+ */
+
+/* ── Page wrapper - account for fixed navbar ── */
+main {
+  padding-top: 68px;
+}
+
+/* The hero section handles its own top padding so we reset it */
+main>#hero,
+main>section:first-child {
+  padding-top: 100px;
+}
