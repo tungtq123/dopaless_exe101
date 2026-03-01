@@ -9,7 +9,7 @@ export default function HomePage() {
     useScrollReveal();
 
     useEffect(() => {
-        document.title = 'Dopaless – Định nghĩa về Dopamine';
+        document.title = 'Dopaless - Hành trình làm chủ não bộ';
     }, []);
 
     const toggleFaq = (id) => {
