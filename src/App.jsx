@@ -1,35 +1,71 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import HomePage from './pages/home/HomePage';
+import PlaceholderPage from './pages/PlaceholderPage';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/gioi-thieu"
+          element={
+            <PlaceholderPage
+              title="Giới Thiệu"
+              emoji="🧠"
+              description="Tìm hiểu về sứ mệnh của Dopaless và nhóm phát triển."
+            />
+          }
+        />
+        <Route
+          path="/bai-test"
+          element={
+            <PlaceholderPage
+              title="Bài Test Dopamine"
+              emoji="📊"
+              description="Bài kiểm tra tâm lý về mức độ lệ thuộc dopamine đang được xây dựng."
+            />
+          }
+        />
+        <Route
+          path="/tin-tuc"
+          element={
+            <PlaceholderPage
+              title="Tin Tức & Blog"
+              emoji="📰"
+              description="Các bài viết khoa học và tin tức mới nhất về sức khoẻ số."
+            />
+          }
+        />
+        <Route
+          path="/lien-he"
+          element={
+            <PlaceholderPage
+              title="Liên Hệ"
+              emoji="💌"
+              description="Kết nối với đội ngũ Dopaless. Email: hello@dopaless.com"
+            />
+          }
+        />
+        {/* 404 fallback */}
+        <Route
+          path="*"
+          element={
+            <PlaceholderPage
+              title="404 – Không tìm thấy trang"
+              emoji="🔍"
+              description="Trang bạn đang tìm kiếm không tồn tại."
+            />
+          }
+        />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
