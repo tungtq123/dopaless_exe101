@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 import './Header.css';
 
 const navLinks = [
@@ -28,7 +29,7 @@ export default function Header() {
     return (
         <nav id="navbar" className={isScrolled ? 'scrolled' : ''}>
             <Link to="/" className="nav-logo">
-                🧠 Dopaless
+                <img src={logo} alt="Dopaless Logo" className="header-logo" />
             </Link>
 
             <ul className={`nav-links ${menuOpen ? 'nav-links--open' : ''}`}>

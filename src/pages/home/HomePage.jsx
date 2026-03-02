@@ -40,7 +40,7 @@ export default function HomePage() {
                         </p>
                         <div className="hero-ctas">
                             <a href="#test-section" className="btn-primary">
-                                Kiểm tra não bạn ngay →
+                                Bắt đầu kiểm tra ngay →
                             </a>
                             <a href="#" className="btn-secondary">
                                 Tham gia cộng đồng
