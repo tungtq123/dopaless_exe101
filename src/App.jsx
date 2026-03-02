@@ -3,7 +3,12 @@ import './App.css';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './pages/home/HomePage';
+import AboutPage from './pages/about/AboutPage';
+import TestPage from './pages/testpage/TestPage';
 import PlaceholderPage from './pages/PlaceholderPage';
+import NewsPage from './pages/news/NewsPage';
+import NewsDetailPage from './pages/news/NewsDetailPage';
+import ContactPage from './pages/contact/ContactPage';
 
 function App() {
   return (
@@ -11,46 +16,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/gioi-thieu"
-          element={
-            <PlaceholderPage
-              title="Giới Thiệu"
-              emoji="🧠"
-              description="Tìm hiểu về sứ mệnh của Dopaless và nhóm phát triển."
-            />
-          }
-        />
-        <Route
-          path="/bai-test"
-          element={
-            <PlaceholderPage
-              title="Bài Test Dopamine"
-              emoji="📊"
-              description="Bài kiểm tra tâm lý về mức độ lệ thuộc dopamine đang được xây dựng."
-            />
-          }
-        />
-        <Route
-          path="/tin-tuc"
-          element={
-            <PlaceholderPage
-              title="Tin Tức & Blog"
-              emoji="📰"
-              description="Các bài viết khoa học và tin tức mới nhất về sức khoẻ số."
-            />
-          }
-        />
-        <Route
-          path="/lien-he"
-          element={
-            <PlaceholderPage
-              title="Liên Hệ"
-              emoji="💌"
-              description="Kết nối với đội ngũ Dopaless. Email: hello@dopaless.com"
-            />
-          }
-        />
+        <Route path="/gioi-thieu" element={<AboutPage />} />
+        <Route path="/bai-test" element={<TestPage />} />
+        <Route path="/tin-tuc" element={<NewsPage />} />
+        <Route path="/tin-tuc/:id" element={<NewsDetailPage />} />
+        <Route path="/lien-he" element={<ContactPage />} />
         {/* 404 fallback */}
         <Route
           path="*"
