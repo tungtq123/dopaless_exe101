@@ -43,7 +43,7 @@ export default function AboutPage() {
                         </div>
                         <h2>Sứ mệnh của chúng tôi</h2>
                         <p>
-                            Giúp <strong>1 triệu người trẻ Việt Nam</strong> làm chủ Dopamine và giành
+                            Giúp <strong>người trẻ Việt Nam</strong> làm chủ Dopamine và giành
                             lại khả năng tập trung sâu. Chúng tôi tin rằng kiến thức khoa học là chìa khóa
                             để giải phóng tiềm năng con người khỏi sự lệ thuộc vào các kích thích kỹ thuật số.
                         </p>

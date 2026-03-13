@@ -48,7 +48,7 @@
 
 .about-hero h1 {
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(3rem, 6vw, 4.6rem);
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
     font-weight: 800;
     line-height: 1.15;
     margin-bottom: 1.5rem;
@@ -174,7 +174,7 @@
 
 .mv-card h2 {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #fff;
     margin-bottom: 1rem;
@@ -196,7 +196,7 @@
 /* ── Steps Grid (Why Choose Us) ── */
 .why-us-section {
     padding: 110px 3%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -406,19 +406,64 @@
 }
 
 @media (max-width: 600px) {
+    .about-hero {
+        padding: 100px 5% 40px;
+        min-height: auto;
+    }
+
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .mission-vision-section {
+        padding: 60px 5%;
+    }
+
+    .mv-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .mv-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .why-us-section {
+        padding: 60px 5%;
+    }
+
     .steps-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .step-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .team-section {
+        padding: 60px 5%;
     }
 
     .team-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
-    .about-hero {
-        padding: 120px 5% 60px;
+    .team-member {
+        padding: 2rem 1rem;
     }
 
-    .mv-card {
-        padding: 2.5rem 1.5rem;
+    .about-cta-banner {
+        padding: 3rem 5%;
+    }
+
+    .about-banner-cta {
+        width: 100%;
+        justify-content: center;
     }
 }
