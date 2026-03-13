@@ -35,7 +35,7 @@
 #hero {
     min-height: 100vh;
     align-items: center;
-    padding: 95px 2% 60px;
+    padding: 100px 3% 80px;
     /* Adjust padding to bring closer to header */
     position: relative;
     overflow: hidden;
@@ -74,8 +74,7 @@
     /* Left side wider to take up space */
     gap: 5rem;
     align-items: center;
-    max-width: 1650px;
-    /* Make the container even larger */
+    max-width: 1250px;
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -123,8 +122,7 @@
 
 .hero-title {
     font-family: "Outfit", sans-serif;
-    font-size: clamp(3rem, 6vw, 4.6rem);
-    /* Make title much larger */
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
     font-weight: 800;
     line-height: 1.12;
     letter-spacing: 1.5px;
@@ -205,7 +203,7 @@
 
 .hero-img-card {
     width: 100%;
-    max-width: 540px;
+    max-width: 420px;
     aspect-ratio: 1;
     background: linear-gradient(145deg, var(--teal-pale), #d4efed);
     border-radius: var(--radius-lg);
@@ -396,7 +394,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -462,7 +460,7 @@
 /* ── HOW IT WORKS ── */
 #how {
     padding: 110px 3%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -585,7 +583,7 @@
 }
 
 .proof-inner {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -816,17 +814,71 @@
 }
 
 @media (max-width: 600px) {
+    .hero-title {
+        font-size: 2.2rem;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .stats-strip {
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .stat-num {
+        font-size: 1.8rem;
+    }
+
+    #test-section {
+        padding: 50px 5%;
+    }
+
+    .test-inner {
+        gap: 1.5rem;
+    }
+
+    .test-content h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .test-content p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .test-banner-cta {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-head {
+        margin-bottom: 2.5rem;
+    }
+
     .steps-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .step-card {
+        padding: 2rem 1.5rem;
     }
 
     .proof-stats,
     .testimonials-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
 
-    .stats-strip {
-        gap: 2rem;
+    .faq-q {
+        padding: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -842,8 +894,8 @@
 }
 
 .contact-blob {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;

@@ -163,7 +163,7 @@ export default function NewsPage() {
             {/* ── HERO HEADER ── */}
             <section className="news-hero">
                 <div className="news-hero-content reveal">
-                    <span className="hero-badge" style={{ justifyContent: 'center', margin: '0 auto 1.5rem', width: 'fit-content' }}>
+                    <span className="hero-badge">
                         <span className="hero-badge-dot" />
                         Góc Nhìn Khách Quan
                     </span>

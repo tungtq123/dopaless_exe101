@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import logo from '../../assets/logo.png';
 
 const resourceLinks = [
     { label: 'Nghiên cứu khoa học', to: '#' },
@@ -36,9 +37,12 @@ export default function Footer() {
             <div className="footer-grid">
                 {/* Brand column */}
                 <div className="footer-brand">
-                    <span className="brand-name">🧠 Dopaless</span>
+                    <Link to="/" className="footer-logo-wrapper">
+                        <img src={logo} alt="Dopaless Logo" className="footer-logo-img" />
+                        <span className="footer-brand-name">Dopaless<span>.</span></span>
+                    </Link>
                     <p>
-                        Sứ mệnh của chúng tôi: giúp 1 triệu người trẻ Việt Nam hiểu rõ tác động
+                        Sứ mệnh của chúng tôi: giúp người trẻ Việt Nam hiểu rõ tác động
                         của dopamine và lấy lại quyền kiểm soát cuộc sống số của mình.
                     </p>
                     <p className="footer-disclaimer">
